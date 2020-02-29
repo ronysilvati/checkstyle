@@ -369,6 +369,15 @@
   <build>
     <pluginManagement>
       <plugins>
+      	<plugin>
+      <groupId>org.evosuite.plugins</groupId>
+      <artifactId>evosuite-maven-plugin</artifactId>
+      <version>1.0.6</version>
+      <executions><execution>
+         <goals> <goal> prepare </goal> </goals>
+         <phase> process-test-classes </phase>
+      </execution></executions>
+  </plugin>
         <!-- from super-pom http://maven.apache.org/ref/3.5.2/maven-model-builder/super-pom.html
              BEGIN -->
         <!-- we need to override just make "mvn versions:plugin-updates-report"
